@@ -1,0 +1,118 @@
+body {
+    background-image: url("wallpapeeer.gif");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0, 0, 0, rgb(0, 0, 0, 0.0);
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    width: 6px;
+}
+
+body::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    grid-template-rows: 100px 80px 300px 300px 100px;
+    height: 900px;
+    margin: 80px 20px;
+    gap: 1.2px;
+    color: rgb(100, 164, 238);
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: rgba(217, 214, 214, 0.1);
+    border: 1px solid rgb(2, 2, 27);
+}
+
+nav {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: rgba(217, 214, 214, 0.1);
+    border: 1px solid rgb(2, 2, 27);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    width: 200px;
+    height: 40px;
+    float: left;
+    padding: 20px 30px;
+    margin: 0 25.6px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 5px;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(100, 164, 238);
+    border-radius: 15px;
+}
+
+nav ul li a:hover {
+    color: rgb(152, 216, 234);
+    box-shadow: 1px 3px 5px magenta;
+}
+
+section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: rgba(217, 214, 214, 0.1);
+    border: 1px solid rgb(2, 2, 27);
+    padding: 20px;
+}
+
+article {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: rgba(217, 214, 214, 0.1);
+    border: 1px solid rgb(2, 2, 27);
+    padding: 20px;
+}
+
+aside {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: rgba(217, 214, 214, 0.1);
+    border: 1px solid rgb(2, 2, 27);
+    padding: 20px;
+    font-size: 25px;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: rgba(217, 214, 214, 0.1);
+    border: 1px solid rgb(2, 2, 27);
+    padding: 10px;
+}
